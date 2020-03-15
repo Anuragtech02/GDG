@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GDG Indore</title>
     <link type="text/css" rel="stylesheet" href="index.css" >
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
     <div class="wrapper">
         <div id="navbar"><!--Nav Bar Starts -->
             <div class="menu">
-                <button class=menubtn><img src="images/menu-24px.svg"></button>
-                <!--
+                <i class="material-icons" id="menuicon">menu</i>
+                <!--<img src="images/menu-24px.svg">
                     div class="menubar">
                     <div class="logo">
                         <img src="images/gdgindore.png">
@@ -36,15 +36,15 @@
         </div><!--Nav Bar Ends-->
 
 
-        <div class="fixedBar"><!--Fixed Bar Starts-->
-            <icon class="homef">Home</icon>
-            <button class="homef"></button>
-            <icon class="teamf">Team</icon>
-            <button class="teamf"></button>
-            <icon class="aboutf">About</icon>
-            <button class="aboutf"></button>
-            <icon class="contactf">Contact</icon>
-            <button class="contactf"></button>
+        <div class="fixedbar"><!--Fixed Bar Starts-->
+            <i class="material-icons" style="grid-area:homei;"id="i" >dashboard</i>
+            <h5 style="grid-area:homet;"id="t">Home</h5></button>
+            <i class="material-icons"style="grid-area:teami;"id="i">people</i>
+            <h5 style="grid-area:teamt;"id="t">Team</h5>
+            <i class="material-icons" style="grid-area:abouti;" id="i">toc</i>
+            <h5 style="grid-area:aboutt;"id="t">About</h5>
+            <i class="material-icons" style="grid-area:contacti;" id="i">person</i>
+            <h5 style="grid-area:contactt;"id="t">Contact</h5>
         </div><!--Fixed Bar Ends-->
 
 
@@ -52,13 +52,14 @@
             <div class="vr">
                 <img src="images/vr.png" alt="" class="vr">
             </div>
-            <h1>Make good things</h1>
-            <h1>together</h1>
-            <h1>.</h1>
-            <p>Google Developers Group Indore is an initiative to concentrate the efforts of many developers in and around cnetral India to learn, share and get productive using the various Google products.</p>
-            <h4>#GDGIndore   #WTMIndore   #GDG   #WTM </h4>
-            <button class="member">Become A Member</button>
-            <button class="learnMore">Learn More</button>
+            <h1 id="mgt"style="color:rgb(105, 104, 104); font-weight:600;" >Make good things</h1>
+            <h1 id="together"style="color:royalblue;" >together</h1>
+            <h1 id="dot"style="color:rgb(105, 104, 104);">.</h1>
+            <h1 id="gdgindore" style="color:grey;">GDG Indore</h1>
+            <p id="para" >Google Developers Group Indore is an initiative to concentrate the efforts of many developers in and around cnetral India to learn, share and get productive using the various Google products.</p>
+            <h4 id="hashtags">#GDGIndore   #WTMIndore   #GDG   #WTM </h4>
+            <button id="member">Become A Member</button>
+            <button id="learnmore">Learn More</button>
         </div><!--Introduction Ends-->>
 
 

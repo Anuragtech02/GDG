@@ -1,7 +1,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-
 }
+/*Nav Bar Starts*/
 #navbar{
     display:flex;
     background-color: white;
@@ -13,21 +13,122 @@ body{
     box-shadow: 0px 2px 5px rgb(155, 152, 152);
 }
 
-.menubtn {
+#menuicon{
     background-color:white;
-    margin:0px;
-    align-items: center;
-    border-radius: 10px;
-    border-style: none; 
-    margin-top:18px;
-    margin-left:10px;
+    margin-top: 9px;
+    margin-left:9px;
+    border-radius:50%;
+    height:21px;
+    width:22px;
+    vertical-align:middle;
+    padding:9px;
 }
-.menubtn:hover{
+#menuicon:hover{
     background-color:rgb(221, 217, 217);
 }
+
 #logo img{
     width:219px;
     height:70px;
     margin-left:5px;
     margin-top:-5px;
+}
+/*Fixed Bar Starts*/
+.fixedbar{
+    height:57px;
+    position:fixed;
+    bottom:0px;
+    width: 100%;
+    background-color: white;
+    margin-left: -10px;
+    margin-bottom: 0px;
+    display:grid;
+    grid-template-columns: repeat(8,1fr);
+    box-shadow: 2px 0px 5px rgb(155, 152, 152);
+    grid-template-rows: 33px 24px ;
+    grid-template-areas:
+    "homei homei teami teami abouti abouti contacti contacti"
+    "homet homet teamt teamt aboutt aboutt contactt contactt"
+    ". . . . . . . ."
+    ;
+    justify-items: center;
+}
+#i{
+     align-self: center;
+     color:rgb(139, 134, 134);
+}
+#t{
+    margin-top:0px;
+    color:rgb(139, 134, 134);
+}
+.fixedbar a{
+    display:grid;
+
+}
+.fixedbar a .homef{
+    grid-column:1/3;
+    grid-row: 1/3;
+}
+
+/*Make Good Things Togehter And Vr Image Starts*/
+.intro{
+    display:grid;
+    margin:8px;
+    grid-template-columns: repeat(8,1fr);
+}
+.vr{
+    grid-column:1/9;
+    width:98%;
+    z-index: -4;
+    margin: 1%;
+    margin-top:4%;
+}
+.intro h1{
+    font-size: 2.5em;
+}
+.intro #mgt{
+    grid-column: 1/8;
+    margin:0;
+}
+.intro #together{
+    grid-column: 1/4;
+    margin:4px;
+}
+.intro #dot{
+    grid-column: 4/5;
+    margin:4px;
+    margin-left:10px;
+}
+.intro #gdgindore{
+    grid-column:1/7 ;
+    font-weight:100;
+    font-size:1.7em;
+}
+.intro #para{
+    grid-column:1/9;
+    font-weight:500;
+    color:rgb(95, 91, 91);
+}
+.intro #hashtags{
+    grid-column:1/7;
+    color:rgb(150, 142, 142);
+
+}
+.intro #member{
+    grid-column: 1/4;
+    background-color: royalblue;
+    border-style: none;
+    border-radius: 5px;
+    padding:8px 0px;
+    color:white;
+}
+.intro #learnmore{
+    grid-column:4/6;
+    padding:8px 0px;
+    border-radius: 8px;
+    border-color:rgb(75, 204, 243) ;
+    border-style: solid;
+    background-color: white;
+    color:rgb(75, 204, 243);
+    margin-left:10px;
 }
