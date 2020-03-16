@@ -6,6 +6,9 @@
     <title>GDG Indore</title>
     <link type="text/css" rel="stylesheet" href="index.css" >
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+    <script src="https://kit.fontawesome.com/b03b2d264f.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -36,15 +39,15 @@
         </div><!--Nav Bar Ends-->
 
 
-        <div class="fixedbar"><!--Fixed Bar Starts-->
-            <i class="material-icons" style="grid-area:homei;"id="i" >dashboard</i>
-            <h5 style="grid-area:homet;"id="t">Home</h5></button>
-            <i class="material-icons"style="grid-area:teami;"id="i">people</i>
-            <h5 style="grid-area:teamt;"id="t">Team</h5>
-            <i class="material-icons" style="grid-area:abouti;" id="i">toc</i>
-            <h5 style="grid-area:aboutt;"id="t">About</h5>
-            <i class="material-icons" style="grid-area:contacti;" id="i">person</i>
-            <h5 style="grid-area:contactt;"id="t">Contact</h5>
+        <div class="fixedbar" style="z-index: 5;"><!--Fixed Bar Starts-->
+            <i class="material-icons" style="grid-area:homei;"id="i1" >dashboard</i>
+            <h5 style="grid-area:homet;"id="t1">Home</h5></button>
+            <i class="material-icons"style="grid-area:teami;"id="i2">people</i>
+            <h5 style="grid-area:teamt;"id="t2">Team</h5>
+            <i class="material-icons" style="grid-area:abouti;" id="i3">toc</i>
+            <h5 style="grid-area:aboutt;"id="t3">About</h5>
+            <i class="material-icons" style="grid-area:contacti;" id="i4">person</i>
+            <h5 style="grid-area:contactt;"id="t4">Contact</h5>
         </div><!--Fixed Bar Ends-->
 
 
@@ -52,9 +55,7 @@
             <div class="vr">
                 <img src="images/vr.png" alt="" class="vr">
             </div>
-            <h1 id="mgt"style="color:rgb(105, 104, 104); font-weight:600;" >Make good things</h1>
-            <h1 id="together"style="color:royalblue;" >together</h1>
-            <h1 id="dot"style="color:rgb(105, 104, 104);">.</h1>
+            <h1 id="mgt"style="color:rgb(105, 104, 104); font-weight:600;" >Make good things <span style="color:royalblue;">together</span>.</h1>
             <h1 id="gdgindore" style="color:grey;">GDG Indore</h1>
             <p id="para" >Google Developers Group Indore is an initiative to concentrate the efforts of many developers in and around cnetral India to learn, share and get productive using the various Google products.</p>
             <h4 id="hashtags">#GDGIndore   #WTMIndore   #GDG   #WTM </h4>
@@ -65,31 +66,37 @@
 
         <div class="wwd"><!--What We Do ? Starts-->
             <div class="wwdcontent">
-                <h2>What we do?</h2>
-                <p>Google Developer Groups (GDGs) are the tech enthusiasts for all the people who like to keep themselves updated about the latest google technologies.</p>
-                <p>About different Google technologies</p>
-                <icon class="angular"></icon>
-                <icon class="googleCloudPlatform"></icon>
-                <icon class="android"></icon>
-                <icon class="actionsOnGoogle"></icon>
-                <icon class="firebase"></icon>
-                <icon class="tensorflow"></icon>
+                <h2 style="font-weight: 100;">What we do?</h2>
+                <p id="para">Google Developer Groups (GDGs) are the tech enthusiasts for all the people who like to keep themselves updated about the latest google technologies.</p>
+                <p style="color:rgb(51, 50, 50);">About different Google technologies</p>
+                <img src="https://img.icons8.com/color/48/000000/angularjs.png"/>
+                <span class="iconify" data-icon="logos:google-cloud" data-inline="false"style="font-size:42px;"></span>
+                <img src="https://img.icons8.com/color/48/000000/android-os.png"/>
+                <img src="https://img.icons8.com/color/48/000000/action.png"/>
+                <img src="https://img.icons8.com/color/48/000000/firebase.png"/>
+                <span class="iconify" data-icon="logos-tensorflow" data-inline="false" style="font-size: 48px;"></span>
             </div>
-            <div class="talks">
-                <icon class="talks">Talks</icon>
-                <p>Get updated with the latest news and announcements</p>
-            </div>
-            <div class="codelabs">
-                <icon class="codelabs">Codelabs</icon>
-                <p>Get hands-on experience and guidance from the community members</p>
-            </div>
-            <div class="campus">
-                <icon class="campus">Campus Roadshows</icon>
-                <p>Share knowledge in different Companies, colleges and universities</p>
-            </div>
-            <div class="live">
-                <icon class="live">Live Viewing Parties</icon>
-                <p>Share knowledge in different Companies, colleges and universities</p>
+            <div class="wwdcard">
+                <div style="grid-area: talks;"class="cardcontainer">
+                    <i id="icon" class="material-icons">chat_bubble</i>
+                    <h4 id="heading">Talks</h4>
+                    <p id="content">Get updated with the latest news and announcements</p>
+                </div>
+                <div style="grid-area: codelabs;"class="cardcontainer">
+                    <i id="icon"class="material-icons">code</i>
+                    <h4 id="heading">Codelabs</h4>
+                    <p id="content">Get hands-on experience and guidance from the community members</p>
+                </div>
+                <div style="grid-area:campus ;"class="cardcontainer">
+                    <i id="icon" class="material-icons">school</i>
+                    <h4 id="heading">Campus Roadshows</h4>
+                    <p id="content">Share knowledge in different Companies, colleges and universities</p>
+                </div>
+                <div style="grid-area: live;"class="cardcontainer">
+                    <i id="icon" class="material-icons">live_tv</i>
+                    <h4 id="heading">Live Viewing Parties</h4>
+                    <p id="content">Share knowledge in different Companies, colleges and universities</p>
+                </div>
             </div>
         </div><!--What We Do ? Ends-->
 
@@ -103,24 +110,27 @@
         </div><!--About GDG Indore Ends-->
 
 
-        <div class="ourEvents"><!-- Our Events And Meetups Starts-->
+        <div class="ourevents"><!-- Our Events And Meetups Starts-->
             <h3>Our Events & Meetups</h3>
             <p>At sessions that span from the technical to the visionary, let’s celebrate and discover what the technologies can enable: how product innovation, open source, and ML and AI can propel enterprises forward and solve the big problems that impact all of us. </p>
             <a href="seemore.com">See More</a>
         </div><!--Our Events And Meetups Ends-->
 
 
-        <div class="ourFeature"><!--Our Feature Event & Meetup Starts-->
+        <div class="ourfeature"><!--Our Feature Event & Meetup Starts-->
             <h3>Our Feature Event & Meetup </h3>
             <div class="card">
                 <img src="images/meetup.png" alt="">
-                <h3>GDG Indore</h3>
+                <p style="color:rgb(57, 102, 236);font-weight:500; font-size:126%;">GDG Indore</p>
                 <p>Google Developers Community, Indore is a community initiative taken by a lot of technical enthusiasts of Indore targeting to provide a platform to all the fresher’s and professionals for learning, interacting and especially creating a very strong network. </p>
-                <a href="registration.html">
-                    <button class="registration">Registration Link</button>
-                </a>
-                <icon class="meetup"></icon>
-                <icon class="facebook"></icon>
+                <div class="forflex">
+                    <a href="registration.html">
+                        <button class="registration">Registration Link</button>
+                    </a>
+                    <br/>
+                    <span class="iconify" style="font-size:200%;" data-icon="fa-brands:meetup" data-inline="false"></span>
+                    <span class="iconify" style="font-size:170%;" data-icon="brandico:facebook" data-inline="false"></span>
+                </div>
             </div>
         </div><!--Our Feature Event & Meetup Ends-->
 
@@ -132,6 +142,7 @@
             If you’re interested in being showcased throughout <b>GDG Indore</b>, contact <a href="email.html">gdgindore@gmail.com</a> to discuss sponsorship opportunities.</p>
             <div class="general">
                 <div class="gdgBtn">
+                    <p>General Partners</p>
                     <a><button class="gdg"><img src="images/gdgbtn.png" alt=""></button></a>
                 </div>
                 <div class="woment">
@@ -139,6 +150,7 @@
                 </div>
             </div>
             <div class="template">
+                <p>Template Partners</p>
                 <a href="gdgindore.html"><button class="gdgindore"><img src="images/gdgindore.png" alt=""></button></a>
             </div>
         </div><!--Partners Ends-->
