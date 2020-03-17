@@ -14,6 +14,7 @@ body{
 }
 
 #menuicon{
+    
     background-color:white;
     margin-top: 9px;
     margin-left:9px;
@@ -38,7 +39,7 @@ body{
     height:57px;
     position:fixed;
     bottom:0px;
-    width: 100%;
+    width:101%;
     background-color: white;
     margin-left: -10px;
     margin-bottom: 0px;
