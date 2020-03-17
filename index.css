@@ -39,7 +39,7 @@ body{
     height:57px;
     position:fixed;
     bottom:0px;
-    width:99%;
+    width:100%;
     background-color: white;
     margin-left: -10px;
     margin-bottom: 0px;
@@ -301,7 +301,6 @@ p{
 .template button{
     margin-bottom:57px;
 }
-.general {
-
+.card img{
+    width:100%;
 }
-
